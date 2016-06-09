@@ -31,8 +31,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 
 	/* Local data used by MarkActive and RuleClassify.

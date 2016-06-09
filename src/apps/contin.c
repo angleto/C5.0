@@ -31,8 +31,8 @@
 /*								  	 */
 /*************************************************************************/
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 #define	PartInfo(n) (-(n)*Log((n)/GEnv.Cases))
 

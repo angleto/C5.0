@@ -36,8 +36,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 Condition	*Test=Nil;	/* tests that appear in ruleset */
 int		NTest,		/* number of distinct tests */

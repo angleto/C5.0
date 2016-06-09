@@ -2,21 +2,18 @@ PROJECT (See5)
 
 cmake_minimum_required(VERSION 2.8)
 
-#default compiler flags
-
-SET(C_STANDARD_VALUE "c99" CACHE STRING "specify the c standard, use iso9899:1990 for c89")
-SET(CXX_STANDARD_VALUE "c++0x" CACHE STRING "specify the c standard, use c++11 for newer compilers")
-
-SET( CMAKE_CXX_FLAGS_RELEASE "-fPIC -std=${CXX_STANDARD_VALUE} -DVerbOpt -ffloat-store -Ofast" CACHE STRING "" FORCE)
-SET( CMAKE_C_FLAGS_RELEASE "-fPIC -std=${C_STANDARD_VALUE} -DVerbOpt -ffloat-store -Ofast" CACHE STRING "" FORCE)
-SET( CMAKE_CXX_FLAGS_DEBUG "-fPIC -std=${CXX_STANDARD_VALUE} -DVerbOpt -ffloat-store -g3 -O0" CACHE STRING "" FORCE )
-SET( CMAKE_C_FLAGS_DEBUG "-fPIC -std=${C_STANDARD_VALUE} -DVerbOpt -ffloat-store -g3 -O0" CACHE STRING "" FORCE)
-
 IF( CMAKE_SIZEOF_VOID_P EQUAL 8 )
 	SET(NATIVE_OS_ARCH_SIZE 64)
 ELSE()
 	SET(NATIVE_OS_ARCH_SIZE 32)
 ENDIF()
+
+#default compiler flags
+
+SET( CMAKE_CXX_FLAGS_RELEASE "-fPIC -DVerbOpt -ffloat-store -Ofast" CACHE STRING "" FORCE)
+SET( CMAKE_C_FLAGS_RELEASE "-fPIC -DVerbOpt -ffloat-store -Ofast" CACHE STRING "" FORCE)
+SET( CMAKE_CXX_FLAGS_DEBUG "-fPIC -DVerbOpt -ffloat-store -g3 -O0" CACHE STRING "" FORCE )
+SET( CMAKE_C_FLAGS_DEBUG "-fPIC -DVerbOpt -ffloat-store -g3 -O0" CACHE STRING "" FORCE)
 
 SET(FORCE_32_BIT OFF CACHE BOOL "force bulding of 32 bit binaries")
 IF(FORCE_32_BIT)

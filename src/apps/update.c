@@ -32,8 +32,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 
 FILE	*Uf=0;			/* File to which update info written  */

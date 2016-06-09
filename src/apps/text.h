@@ -1,3 +1,6 @@
+#ifndef __TEXT_I__
+#define __TEXT_I__
+
 /*************************************************************************/
 /*									 */
 /*  Copyright 2010 Rulequest Research Pty Ltd.				 */
@@ -221,3 +224,5 @@
 #define	 T_ErrorLimit		"\nError limit exceeded\n"
 #define	 TX_IllegalValue(v,l,h)	"\t** illegal value %g -- "\
 				"should be between %g and %g\n", v, l, h
+
+#endif /* __TEXT_I__*/

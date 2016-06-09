@@ -32,8 +32,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 #include <sys/types.h>
 #include <sys/stat.h>

@@ -33,8 +33,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 
 float	*DeltaErrs=Nil,	/* DeltaErrs[r]	 = change attributable to rule r or

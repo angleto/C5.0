@@ -32,8 +32,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 float		*AttImp=Nil;		/* att importance */
 Boolean		*Split=Nil,		/* atts used in unpruned tree */

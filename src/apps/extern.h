@@ -1,3 +1,6 @@
+#ifndef __EXTERN_I__
+#define __EXTERN_I__
+
 /*************************************************************************/
 /*									 */
 /*  Copyright 2010 Rulequest Research Pty Ltd.				 */
@@ -22,7 +25,7 @@
 /*									 */
 /*************************************************************************/
 
-
+#include "defns.h"
 
 extern	int		VERBOSITY,
 			TRIALS,
@@ -168,3 +171,4 @@ extern	char		Fn[500];
 
 extern	FILE  		*Of;
 
+#endif /* __EXTERN_I__ */

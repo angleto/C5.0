@@ -39,8 +39,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 double		*Errors=Nil,		/* [Condition] */
 		*Total=Nil;		/* [Condition] */

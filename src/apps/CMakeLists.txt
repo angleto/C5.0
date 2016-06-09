@@ -27,8 +27,9 @@ SET(C5_SRCS
     modelfiles.c
     utility.c
     xval.c
-    defns.i
-    text.i
+	defns.h
+	text.h
+	extern.h
 )
 
 ADD_EXECUTABLE(c5.0

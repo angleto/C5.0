@@ -32,8 +32,8 @@
 /*************************************************************************/
 
 
-#include "defns.i"
-#include "extern.i"
+#include "defns.h"
+#include "extern.h"
 
 
 #define	  LocalVerbosity(x,s)	if (Sh >= 0) {Verbosity(x,s)}

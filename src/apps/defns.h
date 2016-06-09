@@ -1,3 +1,5 @@
+#ifndef __DEFNS_I__
+#define __DEFNS_I__
 /*************************************************************************/
 /*									 */
 /*  Copyright 2010 Rulequest Research Pty Ltd.				 */
@@ -32,7 +34,6 @@
 /*									 */
 /*************************************************************************/
 
-
 #define	 RELEASE	"2.07 GPL Edition"
 
 				/*  Uncomment following line to enable
@@ -50,7 +51,7 @@
 #include <limits.h>
 #include <float.h>
 
-#include "text.i"
+#include "text.h"
 
 
 
@@ -784,5 +785,4 @@ void	    Shuffle(int *Vec);
 void	    Summary(void);
 float	    SE(float sum, float sumsq, int no);
 
-
-
+#endif /* __DEFNS_I__ */
