@@ -34,6 +34,8 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 void	PrintSummary(float **Val, int No, char *Title);
 float	SE(float sum, float sumsq, int no);
