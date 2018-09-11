@@ -59,5 +59,9 @@ if(DOXYGEN_FOUND)
 		)
 endif(DOXYGEN_FOUND)
 
+SET(COMMON_SRC ${CMAKE_SOURCE_DIR}/common)
+
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include)
+
 add_subdirectory(apps)
 

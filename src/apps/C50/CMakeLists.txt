@@ -1,3 +1,4 @@
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
 
 SET(C5_SRCS
     global.c
@@ -23,13 +24,10 @@ SET(C5_SRCS
     attwinnow.c
     classify.c
     formrules.c
-    getnames.c
+    ${COMMON_SRC}/getnames.c
     modelfiles.c
     utility.c
     xval.c
-	defns.h
-	text.h
-	extern.h
 )
 
 ADD_EXECUTABLE(c5.0
