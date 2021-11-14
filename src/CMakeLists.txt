@@ -1,6 +1,6 @@
 PROJECT (See5)
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.21)
 
 IF( CMAKE_SIZEOF_VOID_P EQUAL 8 )
 	SET(NATIVE_OS_ARCH_SIZE 64)
