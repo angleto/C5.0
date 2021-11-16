@@ -216,7 +216,7 @@ int main(int Argc, char *Argv[])
 	}
 	else
 	{
-	    printf("%-15.15s %-15.15s [%.2f]",
+	    printf("%-30.30s %-30.30s [%.2f]",
 		    ClassName[Class(Case)],
 		    ClassName[Predict], GCEnv->Confidence);
 	    CurrentPosition = 54;
